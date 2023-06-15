@@ -1,0 +1,5 @@
+main:
+  - title: "文章分类"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/

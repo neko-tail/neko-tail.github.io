@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+include: ["_pages"]
+
 # 主题配置
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"	# 使用minimal-mistakes主题
 minimal_mistakes_skin: "mint"	# 主题皮肤
@@ -37,6 +39,18 @@ atom_feed:
   hide: true
 # 开启搜索功能
 search: true
+
+# 配置分页
+paginate: 5
+paginate_path: /page:num/
+
+# 配置标签分类
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # 设置默认的Front Matter
 defaults:

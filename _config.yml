@@ -61,6 +61,9 @@ defaults:
     values:
       layout: single
       show_date: true
+      # 文章摘录
+      excerpt_separator: <!--more-->
+      # 文章目录
       toc: true
       toc_label: "Contents"
       toc_icon: "th-list"

@@ -5,6 +5,8 @@ categories: linux
 
 需求：写一个service，用来简化启动和杀死jar包的动作
 
+<!--more-->
+
 实现方式如下
 
 ```sh

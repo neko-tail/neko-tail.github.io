@@ -5,6 +5,8 @@ categories: linux
 
 需求：在一台CentOS 7服务器安装HyperLPR3（一个开源中文车牌识别框架），在线安装和离线安装都需要
 
+<!--more-->
+
 实现：使用rpm包安装依赖，源码编译安装python3，使用whl安装HyperLPR3
 
 >   该流程已弃用，仅供参考，新方案见本文底部Attach章节

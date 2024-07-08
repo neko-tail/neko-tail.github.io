@@ -1,3 +1,80 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+# basic
+baseURL: https://blog.thmaster.net
+languageCode: zh
+title: th-master
+theme: "PaperMod"
+
+paginate: 5
+
+# 分类
+taxonomies:
+    tag: tags
+    category: categories
+    series: series
+menu:
+    main:
+        - name: Search
+          url: /search/
+          weight: 60
+        - name: Archives
+          url: /archives/
+          weight: 20
+        - name: Tags
+          url: /tags/
+          weight: 30
+        - name: Categories
+          url: /categories/
+          weight: 40
+        - name: Series
+          url: /series/
+          weight: 50
+
+enableEmoji: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+# https://gohugo.io/getting-started/configuration/#hascjklanguage
+hasCJKLanguage: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # necessary for search
+
+params:
+    env: production
+    description: "th-master's blog"
+    author: th-master
+    DateFormat: "2006-01-02"
+    defaultTheme: dark
+    ShowReadingTime: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: true
+    ShowPageNums: true
+    ShowWordCount: true
+    ShowToc: true
+
+    # homeInfoParams:
+    #     Title: Hi there wave
+    #     Content: Can be Info, links, about...
+
+    assets:
+        disableHLJS: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    # 代码高亮
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        style: monokai

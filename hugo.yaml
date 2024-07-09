@@ -65,6 +65,7 @@ params:
   ShowPageNums: true
   ShowWordCount: true
   ShowToc: true
+  TocOpen: true
 
   # homeInfoParams:
   #     Title: Hi there wave

@@ -1,0 +1,51 @@
+.toc {
+  padding: 14px;
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .toc {
+    /* 去掉背景和边框 */
+    border: none;
+    background: none !important;
+
+    /* 固定在右侧 */
+    position: sticky;
+    float: right;
+    top: 90px;
+
+    /* 左侧偏移 */
+    --toc-left: calc(100vw / 40);
+    /* 最小宽度 */
+    --default-toc-width: calc(
+      (1280px - var(--main-width)) / 2 - var(--toc-left) - 14px
+    );
+    /* 目录宽度 */
+    --toc-width: max(
+      calc(
+        ((100vw - var(--main-width) - 2 * var(--gap)) / 2 - 2 * var(--toc-left)) *
+          1
+      ),
+      var(--default-toc-width)
+    );
+    width: var(--toc-width);
+    /* 向右偏移 */
+    margin-right: calc(-1 * var(--toc-width) - var(--toc-left));
+
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .toc .inner {
+    padding: 0;
+  }
+
+  .toc details summary {
+    margin-inline-start: 0;
+    margin-bottom: 10px;
+  }
+}
+
+summary {
+  cursor: pointer !important;
+}

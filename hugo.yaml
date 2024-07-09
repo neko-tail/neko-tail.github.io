@@ -1,6 +1,12 @@
 # basic
 baseURL: https://thmaster.net
-languageCode: zh
+# lang
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+languages:
+  zh:
+    languageCode: zh-CN
+    weight: 1
 title: th-master
 theme: "PaperMod"
 

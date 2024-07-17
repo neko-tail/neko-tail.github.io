@@ -28,7 +28,7 @@ tags:
 
 ### 安装 macos
 
-关闭 VirtualBox，在具有管理员权限的 powershell 窗口，先 cd 到 VirtualBox 的安装目录，再执行视频中给出的命令（`"macos"` 为自定义的虚拟机名称）设置虚拟机硬件信息进行伪装
+关闭 VirtualBox，在具有管理员权限的 powershell 窗口，先 cd 到 VirtualBox 的安装目录，再执行视频中给出的命令（`"macos"`为自定义的虚拟机名称）设置虚拟机硬件信息进行伪装
 
 ```powershell
 .\VBoxManage.exe modifyvm "macos" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
@@ -60,7 +60,7 @@ tags:
 
 安装后的 VMware 无法创建 macOS 虚拟机，需要进行解锁
 
-下载 [unlocker](https://github.com/paolo-projects/unlocker) 并解压，使用管理员权限执行里面的 win-install.cmd，即可解锁 VMware 创建虚拟机中的 macos 选项
+下载 [unlocker](https://github.com/paolo-projects/unlocker) 并解压，使用管理员权限执行里面的`win-install.cmd`，即可解锁 VMware 创建虚拟机中的 macos 选项，此外还会自动下载`com.vmware.fusion.zip.tar`文件并从中解压出`darwin.iso`和`darwinPre15.iso`两个文件，放在`tools`目录下
 
 ### iso 文件
 
@@ -84,19 +84,35 @@ rm -fv /tmp/Sonoma.dmg
 
 将桌面的 Sonoma.iso 文件复制到 win 主机中，即可用来创建一个 macOS Sonoma 虚拟机
 
+### 创建 Mac 虚拟机
+
+使用 Sonoma.iso 文件创建一个虚拟机（这里可以正常设置 CPU 核心数等配置），找到该虚拟机的配置文件如`macOS 14.vmx`打开
+
+在`smc.present = "TRUE"`行下面添加`smc.version = "0"`，最终如下
+
+```toml
+smc.present = "TRUE"
+smc.version = "0"
+```
+
+保存修改后，启动虚拟机
+
+根据引导，使用磁盘工具抹掉磁盘，安装 MacOS Sonoma 即可
+
 ### VMware Tools
 
 虚拟机创建完毕之后，发现也有分辨率过低的问题，可以安装 VMware Tools 解决
 
-直接使用 VMware 给 macOS 虚拟机安装 VMware Tools 会失败，这里需要手动安装
+直接使用 VMware 给 macOS 虚拟机安装 VMware Tools 会失败，这里需要使用`darwin.iso`手动安装
 
-下载最新版本的 [com.vmware.fusion.zip.tar](https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.5.2/23775688/universal/core/com.vmware.fusion.zip.tar)
+在[软件准备](#软件准备)一节中，unlocker 会自动下载`darwin.iso`和`darwinPre15.iso`，没有的话可以手动下载：
 
-解压后于 `com.vmware.fusion\payload\VMware Fusion.app\Contents\Library\isoimages\x86_x64` 目录中可以找到找到 `darwin.iso` 和 `darwinPre15.iso` 两个文件
+- 下载最新版本的 [com.vmware.fusion.zip.tar](https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.5.2/23775688/universal/core/com.vmware.fusion.zip.tar)
+- 解压后于`com.vmware.fusion\payload\VMware Fusion.app\Contents\Library\isoimages\x86_x64`目录中可以找到找到`darwin.iso`和`darwinPre15.iso`两个文件
 
 将这两个 iso 文件放于 VMware 根目录（不清楚是否为必须操作）
 
-在 macOS 虚拟机设置的 CD/DVD 选项中使用 `darwin.iso` 文件，重启虚拟机
+在 macOS 虚拟机设置的 CD/DVD 选项中使用`darwin.iso`文件，重启虚拟机
 
 虚拟机桌面会出现一个光盘，双击并选择`安装 VMware Tools`，等待安装结束后在`系统设置-隐私与安全性`里面启用
 
@@ -130,7 +146,7 @@ rm -fv /tmp/Sonoma.dmg
 
 之后就可以关闭 Clover Configurator，并关闭虚拟机
 
-打开虚拟机目录下的 `.vmx` 文件，添加下面的内容，其中的部分值替换为记录的数据
+打开虚拟机目录下的`.vmx`文件，添加下面的内容，其中的部分值替换为记录的数据
 
 ```toml
 board-id = "记录的 Board-ID"
@@ -149,14 +165,14 @@ efi.nvram.var.MLB = "记录的 MLB"
 
 接着进行几项修改：
 
-- `board-id.reflectHost` 设置为 `"TRUE"`
-- `ethernet0.addressType` 从 `"generated"` 改为 `"static"`
-- `ethernet0.generatedAddress` 值的前三段替换为记录的 OUI
-  如：值为`00:0c:29:bb:91:7f`，OUI 为 `00-1F-F3`，修改后的值为 `00:1f:f3:bb:91:7f`
-- `ethernet0.generatedAddress` 重命名为 `ethernet0.Address`
-- `ethernet0.generatedAddressOffset = "0"` 替换为 `ethernet0.checkMACAddress = "FALSE"`
+- `board-id.reflectHost`设置为`"TRUE"`
+- `ethernet0.addressType`从`"generated"`改为`"static"`
+- `ethernet0.generatedAddress`值的前三段替换为记录的 OUI
+  如：值为`00:0c:29:bb:91:7f`，OUI 为`00-1F-F3`，修改后的值为`00:1f:f3:bb:91:7f`
+- `ethernet0.generatedAddress`重命名为`ethernet0.Address`
+- `ethernet0.generatedAddressOffset = "0"`替换为`ethernet0.checkMACAddress = "FALSE"`
 
-最后保存并关闭 `.vmx` 文件
+最后保存并关闭`.vmx`文件
 
 重启虚拟机，现在可以正常登录 Apple ID 了
 

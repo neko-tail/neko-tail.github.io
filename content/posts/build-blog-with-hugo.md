@@ -3,7 +3,7 @@ title: '用 hugo 搭建博客'
 date: 2024-07-09T09:01:51+08:00
 draft: false
 categories:
-  - 开发
+  - 技术
 tags:
   - blog
 series:
@@ -146,7 +146,7 @@ title: '用 hugo 搭建博客'
 date: 2024-07-09T09:01:51+08:00
 draft: true
 categories:
-  - 开发
+  - 技术
 tags:
   - blog
 series:

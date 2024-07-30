@@ -67,9 +67,16 @@ params:
   ShowToc: true
   TocOpen: true
 
-  # homeInfoParams:
-  #     Title: Hi there wave
-  #     Content: Can be Info, links, about...
+  # 主页
+  homeInfoParams:
+    Title: "Hi :innocent:"
+    Content: Welcome to my blog
+  
+  # 社交链接
+  socialIcons:
+    - name: github
+      title: "View Source on Github"
+      url: "https://github.com/neko-tail/neko-tail.github.io"
 
   assets:
     disableHLJS: true

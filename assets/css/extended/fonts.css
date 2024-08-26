@@ -66,4 +66,5 @@ code {
   font-family: "JetBrains Mono", "Noto Sans CJK SC", "Noto Sans CJK",
     -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu,
     Cantarell, open sans, helvetica neue, sans-serif;
+  font-variant-ligatures: none;
 }

@@ -1,6 +1,7 @@
 ---
 title: '用 hugo 搭建博客'
 date: 2024-07-09T09:01:51+08:00
+comments: true
 draft: false
 categories:
   - 技术

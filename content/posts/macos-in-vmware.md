@@ -4,9 +4,10 @@ date: 2024-07-08T14:31:08+08:00
 comments: true
 draft: false
 categories:
-  - 技术
+  - tech
 tags:
   - macOS
+  - 虚拟机
 ---
 
 为了用 flutter 打包 ios app，尝试创建一个 macOS 虚拟机

@@ -4,9 +4,10 @@ date: 2024-08-27T09:16:48+08:00
 comments: true
 draft: false
 categories:
-  - 技术
+  - tech
 tags:
   - 工具
+  - Python
 ---
 
 平时使用 Python 写的一些小工具，有时会需要提供给其他人使用，为了方便分发和使用，我通常会使用 PyInstaller 将程序打包为 exe 文件

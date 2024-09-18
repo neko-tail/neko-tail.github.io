@@ -4,9 +4,11 @@ date: 2024-08-26T10:51:05+08:00
 comments: true
 draft: false
 categories:
-  - 技术
+  - tech
 tags:
   - 工具
+  - Python
+  - CentOS
 ---
 
 [HyperLPR](https://github.com/szad670401/HyperLPR) 是一个中文车牌识别工具，[HyperLPR3](https://github.com/szad670401/HyperLPR/releases/tag/v3.0) 为其当前最新版本，提供命令行、WebApi、python 等多种方式调用，本文记录之前安装和使用 HyperLPR3 的过程

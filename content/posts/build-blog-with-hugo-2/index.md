@@ -1,7 +1,6 @@
 ---
 title: '用 hugo 搭建博客（二）- 修改样式与美化'
 date: 2024-07-09T09:01:52+08:00
-comments: true
 draft: false
 categories:
   - tech

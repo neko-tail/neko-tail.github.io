@@ -75,6 +75,7 @@ params:
   ShowWordCount: true
   ShowToc: true
   TocOpen: true
+  comments: true
 
   # 主页
   homeInfoParams:

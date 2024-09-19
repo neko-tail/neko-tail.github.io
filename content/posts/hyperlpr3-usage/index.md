@@ -1,7 +1,6 @@
 ---
 title: 'HyperLPR3 使用'
 date: 2024-08-26T10:51:05+08:00
-comments: true
 draft: false
 categories:
   - tech

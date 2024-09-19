@@ -1,7 +1,6 @@
 ---
 title: '尝试写一个上隐工具'
 date: 2024-08-23T16:06:29+08:00
-comments: true
 draft: false
 categories:
   - tech

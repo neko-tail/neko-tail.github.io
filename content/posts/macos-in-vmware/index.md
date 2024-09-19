@@ -1,7 +1,6 @@
 ---
 title: '使用 VMware 创建 macOS 虚拟机'
 date: 2024-07-08T14:31:08+08:00
-comments: true
 draft: false
 categories:
   - tech

@@ -1,7 +1,6 @@
 ---
 title: '用 hugo 搭建博客（三）- 评论'
 date: 2024-09-04T16:47:08+08:00
-comments: true
 draft: false
 categories:
   - tech

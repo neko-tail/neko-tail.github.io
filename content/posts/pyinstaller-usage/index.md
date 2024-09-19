@@ -1,7 +1,6 @@
 ---
 title: 'PyInstaller 使用'
 date: 2024-08-27T09:16:48+08:00
-comments: true
 draft: false
 categories:
   - tech

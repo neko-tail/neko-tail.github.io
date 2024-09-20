@@ -76,6 +76,7 @@ params:
   ShowToc: true
   TocOpen: true
   comments: true
+  ShowFullTextinRSS: true
 
   # 主页
   homeInfoParams:
@@ -87,6 +88,9 @@ params:
     - name: github
       title: "View Source on Github"
       url: "https://github.com/neko-tail/neko-tail.github.io"
+    - name: rss
+      title: "RSS"
+      url: "/index.xml"
 
   assets:
     disableHLJS: true

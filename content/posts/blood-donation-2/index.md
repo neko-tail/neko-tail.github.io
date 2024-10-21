@@ -1,5 +1,5 @@
 ---
-title: '鲜血 - 2'
+title: '献血 - 2'
 date: 2024-10-19T10:43:29+08:00
 draft: false
 categories:

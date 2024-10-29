@@ -1,0 +1,7 @@
+{{- $img_dest := .Destination -}}
+
+{{ if (hasPrefix $img_dest "./") }}
+{{ $img_dest = (print (path.Join .Page.RelPermalink $img_dest))}}
+{{ end }}
+
+<img loading="lazy" src="{{ $img_dest | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />

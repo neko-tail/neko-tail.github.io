@@ -35,14 +35,14 @@ python3 -m pip install hyperlpr3
 1. 准备一台相同系统的联网服务器，用于下载相关依赖
 2. 在联网服务器上下载需要的依赖
     - 使用 yumdownloader 下载以下 rpm 包
-        - \'Development Tools\' 群组的rpm包
+        - \'Development Tools\' 群组的 rpm 包
         - openssl-devel libffi-devel bzip2-devel mesa-libGL 包
         - perl-core perl perl-libs perl-Carp perl-constant perl-Encode perl-Exporter perl-File-Path 等 perl 相关包（仅待部署服务器无 perl 的情况下需要）
 
         ```sh
         # 安装工具，主要是 yumdownloader，用于下载 rpm 包
         yum -y install yum-utils
-        # 下载 'Development Tools' 群组的rpm包
+        # 下载 'Development Tools' 群组的 rpm 包
         yumdownloader --resolve --destdir=lpr/lib/rpm "@Development Tools"
         # 下载几个相关依赖的 rpm 包
         yumdownloader --resolve --destdir=lpr/lib/rpm openssl-devel   libffi-devel bzip2-devel mesa-libGL
@@ -147,7 +147,7 @@ python3 -m pip install hyperlpr3
         python3 -m pip download hyperlpr3
         ```
 
-        最新的 opencv-python 没有 py36 的 whl，这里手动下载老版本的，并替换掉上面下载的opencv-python
+        最新的 opencv-python 没有 py36 的 whl，这里手动下载老版本的，并替换掉上面下载的 opencv-python
 
         ```sh
         python3 -m pip download opencv-python==4.6.0.66
@@ -264,7 +264,7 @@ Options:
 直接参考文档中给出的示例：
 
 ```python
-# 导入opencv库
+# 导入 opencv 库
 import cv2
 # 导入依赖包
 import hyperlpr3 as lpr3

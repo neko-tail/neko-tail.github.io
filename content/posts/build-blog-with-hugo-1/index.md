@@ -53,7 +53,7 @@ theme: ["PaperMod"]
 hugo new content posts/test.md
 ```
 
-默认情况下，新增文章的头信息(`front matter`)会是`tomal`语法，可以修改`archetypes/default.md`来修改模板，比如改成`yaml`格式
+默认情况下，新增文章的头信息（`front matter`）会是`tomal`语法，可以修改`archetypes/default.md`来修改模板，比如改成`yaml`格式
 
 ```md
 ---

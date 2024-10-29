@@ -244,7 +244,7 @@ Stream.of("mapper/**/*.xml").forEach(hints.resources()::registerPattern);
 
 ### ShardingSphere-jdbc
 
-修改配置文件的分表规则写法(native-image 不支持 Groovy)：
+修改配置文件的分表规则写法（native-image 不支持 Groovy）：
 
 ```yaml
 actualDataNodes: ds0.t_test_$->{0..1}
@@ -304,7 +304,7 @@ Spring Native 在编译之前会对 jar 包进行 aot 处理，在`META-INF/nati
 
 可以自定义一个实现`RuntimeHintsRegistrar`接口的类来注册需要加入提示文件的内容
 
-RuntimeHints类的写法如下，需要在Bean上使用`@ImportRuntimeHints`注解来导入：
+RuntimeHints 类的写法如下，需要在 Bean 上使用`@ImportRuntimeHints`注解来导入：
 
 ```java
 import java.lang.reflect.Method;
@@ -386,7 +386,7 @@ public class MyReflectionBindingConfiguration {
 
 > [Tracing Agent](https://www.graalvm.org/22.3/reference-manual/native-image/metadata/AutomaticMetadataCollection/#tracing-agent)
 
-将项目打成jar包之后，使用 graalvm 执行下面的命令来运行程序
+将项目打成 jar 包之后，使用 graalvm 执行下面的命令来运行程序
 
 ```sh
 java -agentlib:native-image-agent=config-output-dir=/path/output -jar xxx.jar

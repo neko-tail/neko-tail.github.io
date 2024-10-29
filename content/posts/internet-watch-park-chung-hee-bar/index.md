@@ -22,7 +22,7 @@ draft: false
 
 我接触朴吧比较晚，当时吧头已经换成了 anon，讨论的内容也以“疯狂的网左”为主
 
-<img src="./old.jpg" alt="朴吧 anon 头像" width="120" height="120">
+![朴吧 anon 头像](./old.jpg#120x120)
 
 前段时间，朴吧举行了[吧头像投票](https://tieba.baidu.com/p/9120348028)，之后又因为审核问题，最终将吧头从 anon 换成了 tomori（感觉不如 anon 的那个）
 
@@ -72,10 +72,10 @@ draft: false
 
 话说邦邦和鉴证的重合度未免有些太高了，早在我入坑邦邦之前，就经常能在贴吧刷到很多 [pico](https://www.bilibili.com/bangumi/play/ep249942) 表情包，其中就有相当一部分和鉴证有关系，可能是和喜羊羊的鉴证图是同一时期制作的
 
-![pico-0](pico-0.jpg)
-![pico-1](pico-1.jpg)
-![pico-2](pico-2.jpg)
-![pico-3](pico-3.jpg)
+![pico-0](./pico-0.jpg)
+![pico-1](./pico-1.jpg)
+![pico-2](./pico-2.jpg)
+![pico-3](./pico-3.jpg)
 
 ## 5t5
 

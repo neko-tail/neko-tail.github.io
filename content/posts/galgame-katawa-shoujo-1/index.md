@@ -49,17 +49,17 @@ https://0x0.st/XvZG.rpa/lang-zh.rpa
 
 初次进入游戏时，界面为英语，在打好汉化补丁之后，依次选择 _Options > Language selection > 简体中文（Chinese）_ 即可切换到中文
 
-![Options](Options.png)
+![Options](./options.png)
 
-![Language selection](<Language selection.png>)
+![Language selection](./Language%20selection.png)
 
-![简体中文（Chinese）](简体中文（Chinese）.png)
+![简体中文（Chinese）](./简体中文（Chinese）.png)
 
 ### 操作
 
 #### 主菜单
 
-![主菜单](主菜单.png)
+![主菜单](./主菜单.png)
 
 没有存档的话，直接点击`开始`开启一段新的剧情，然后去看下文的[游戏内界面](#游戏内界面)介绍
 
@@ -69,7 +69,7 @@ https://0x0.st/XvZG.rpa/lang-zh.rpa
 
 `设置`呼出设置界面，可以参考我设置的自动模式速度，里面的其他几个选项基本都是字面意思
 
-![设置](设置.png)
+![设置](./设置.png)
 
 点击`结束`退出游戏
 
@@ -77,11 +77,11 @@ https://0x0.st/XvZG.rpa/lang-zh.rpa
 
 点击`开始`进入游戏，游戏界面比我玩过的其他 galgame 要简单很多（虽然我也只玩过 _Doki Doki Literature Club_ 和 _Revue Starlight El Dorado_）
 
-![游戏界面](游戏界面.png)
+![游戏界面](./游戏界面.png)
 
 按空格或者点击鼠标左键来阅读下一段文字，Esc 或鼠标右键呼出游戏内菜单
 
-![游戏内菜单](游戏内菜单.png)
+![游戏内菜单](./游戏内菜单.png)
 
 其中`快进模式`用来快进到下一个选择，没有存档的话经常用
 
@@ -117,7 +117,7 @@ https://0x0.st/XvZG.rpa/lang-zh.rpa
 
 不过静音线的动画倒是引起了我的兴趣，频繁出现的三角暗示，还有这张经典构图
 
-![静音线动画-经典构图](静音线动画-经典构图.png)
+![静音线动画-经典构图](./静音线动画-经典构图.png)
 
 相当于静音半身的米莎，作为静音与外界唯一沟通桥梁的米莎，看似永远积极乐观的米莎，被静音无法离开地依赖着，但我更愿意相信反而是米莎无法离开静音
 
@@ -127,12 +127,12 @@ https://0x0.st/XvZG.rpa/lang-zh.rpa
 
 特别是琳的立绘，每个表情都很生动，而且形象完全就像是从剧情中走出来的一样，或者应该反过来说，剧情正是琳所会做的
 
-![Rin-1](Rin-1.png)
+![Rin-1](./Rin-1.png)
 
-![Rin-2](Rin-2.png)
+![Rin-2](./Rin-2.png)
 
-![Rin-cinema-1](Rin-cinema-1.png)
+![Rin-cinema-1](./Rin-cinema-1.png)
 
-![Rin-cinema-2](Rin-cinema-2.png)
+![Rin-cinema-2](./Rin-cinema-2.png)
 
 不得不说，BB姬是有品的，无论是怪物马戏团系列，还是其他介绍铃音、少歌的视频都非常不错

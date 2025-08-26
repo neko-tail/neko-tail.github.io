@@ -91,6 +91,7 @@ const config = {
             label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/notes", label: "Notes", position: "left" },
           {
             href: "https://github.com/neko-tail/neko-tail.github.io",
             label: "GitHub",

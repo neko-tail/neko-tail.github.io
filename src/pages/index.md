@@ -1,3 +1,7 @@
-# Hello World!
+# master's site:innocent:
 
-main page
+built with [Docusaurus](https://docusaurus.io)
+
+- [Docs](/docs)
+- [Blog](/blog)
+  - [RSS](/blog/rss.xml)

@@ -1,9 +1,9 @@
 master:
   name: master
-  image_url: /img/avatar.jpg
+  image_url: /img/avatar/master.jpg
   page: true
 
 neko-tail:
   name: neko-tail
-  image_url: /img/avatar.jpg
+  image_url: /img/avatar/neko-tail.jpg
   page: true

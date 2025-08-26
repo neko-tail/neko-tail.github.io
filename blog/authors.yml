@@ -1,0 +1,9 @@
+master:
+  name: master
+  image_url: /img/avatar.jpg
+  page: true
+
+neko-tail:
+  name: neko-tail
+  image_url: /img/avatar.jpg
+  page: true

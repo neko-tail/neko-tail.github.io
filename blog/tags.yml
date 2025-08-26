@@ -1,0 +1,15 @@
+tech:
+  label: "Tech"
+  description: "技术"
+
+dev:
+  label: "Dev"
+  description: "开发"
+
+life:
+  label: "Life"
+  description: "生活"
+
+fun:
+  label: "Fun"
+  description: "娱乐"

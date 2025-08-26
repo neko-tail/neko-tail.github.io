@@ -56,6 +56,9 @@ const config = {
           // "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
+          postsPerPage: 'ALL',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],

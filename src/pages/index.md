@@ -1,3 +1,6 @@
+---
+title: Home
+---
 # master's site:innocent:
 
 built with [Docusaurus](https://docusaurus.io)

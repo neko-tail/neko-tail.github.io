@@ -61,8 +61,11 @@ const config = {
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
+            title: "th_master's blog",
+            description: "feedId:184157557277806592+userId:55778567407213568",
+            type: "all",
+            limit: false,
+            xslt: false,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

@@ -1,3 +1,11 @@
+还在麻，又补了一粒，好像从开始停药到现在，吃了三次了吧
+
+慢慢拉长停药时间，但还是好短，停不了几天就有戒断反应
+
+`2025-09-18`
+
+---
+
 看了阮一峰[这期周刊](https://www.ruanyifeng.com/blog/2025/09/weekly-issue-365.html)分享的一篇文章：[Type Checking is a Symptom, Not a Solution](https://programmingsimplicity.substack.com/p/type-checking-is-a-symptom-not-a)
 
 有点过于离谱了，难以理解，我和作者，肯定有一个人错得离谱

@@ -13,3 +13,7 @@ life:
 fun:
   label: "Fun"
   description: "娱乐"
+
+read:
+  label: "Read"
+  description: "阅读"

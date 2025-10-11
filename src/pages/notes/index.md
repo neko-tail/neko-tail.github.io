@@ -1,3 +1,9 @@
+原来 PowerToys 有个 [File Locksmith](https://learn.microsoft.com/zh-cn/windows/powertoys/file-locksmith) 可以用，以后解决 .git 被锁定的问题就方便了
+
+`2025-10-11`
+
+---
+
 还在麻，又补了一粒，好像从开始停药到现在，吃了三次了吧
 
 慢慢拉长停药时间，但还是好短，停不了几天就有戒断反应

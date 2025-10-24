@@ -1,3 +1,9 @@
+又到了一年一度的 1024 日捏😇
+
+`2025-10-24`
+
+---
+
 原来 PowerToys 有个 [File Locksmith](https://learn.microsoft.com/zh-cn/windows/powertoys/file-locksmith) 可以用，以后解决 .git 被锁定的问题就方便了
 
 `2025-10-11`
